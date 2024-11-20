@@ -1,0 +1,22 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ido",
+  "license": "ISC",
+  "dependencies": {
+    "@farcaster/hub-web": "^0.9.0",
+    "dotenv": "^16.4.5",
+    "viem": "^2.19.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
