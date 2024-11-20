@@ -44,7 +44,7 @@ const main = async () => {
     ...ID_REGISTRY_EIP_712_TYPES,
     primaryType: "Transfer",
     message: {
-      fid: 835424n,
+      fid: BigInt(process.env.FID as string),
       to: account.address,
       nonce,
       deadline: BigInt(deadline),
@@ -56,7 +56,7 @@ const main = async () => {
     ...ID_REGISTRY_EIP_712_TYPES,
     primaryType: "Transfer",
     message: {
-      fid: 835424n,
+      fid: BigInt(process.env.FID as string),
       to: account.address,
       nonce,
       deadline: BigInt(deadline),
