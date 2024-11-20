@@ -5,7 +5,7 @@ import {
   parseAbiItem,
   hashTypedData,
 } from "viem";
-import { privateKeyToAccount } from "viem/accounts";
+import { mnemonicToAccount } from "viem/accounts";
 import {
   ID_REGISTRY_ADDRESS,
   idRegistryABI,
@@ -27,9 +27,7 @@ const main = async () => {
     transport: http(),
   });
 
-  const account = privateKeyToAccount(
-    process.env.RECEIVER_PRIVATE_KEY as `0x${string}`
-  );
+  const account = mnemonicToAccount(process.env.MNEMONIC as `0x${string}`);
 
   const now = Math.floor(Date.now() / 1000);
   const oneHour = 60 * 60 * 12;
